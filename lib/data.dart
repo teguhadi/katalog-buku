@@ -3,7 +3,7 @@ class Book {
   int pages;
   double rating;
 
-  Book(this.title, this.writer, this.price, this.image, this.rating, this.pages,
+  Book(this.title, this.writer, this.image, this.rating, this.pages,
       this.description);
 }
 
