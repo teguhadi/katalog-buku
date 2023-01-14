@@ -11,10 +11,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Toko Buku',
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(
-        primarySwatch: Colors.purple,
-        platform: TargetPlatform.android,
-      ),
+      theme: ThemeData(primarySwatch: Colors.purple),
       home: Home(),
       onGenerateRoute: (settings) => generateRoute(settings),
     );
