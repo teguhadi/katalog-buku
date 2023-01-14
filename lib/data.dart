@@ -1,34 +1,29 @@
 class Book {
-  String title,
-      writer,
-      price,
-      image,
-      description =
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum id neque libero. Donec finibus sem viverra, luctus nisi ac, semper enim. Vestibulum in mi feugiat, mattis erat suscipit, fermentum quam. Mauris non urna sed odio congue rhoncus. \nAliquam a dignissim ex. Suspendisse et sem porta, consequat dui et, placerat tortor. Sed elementum nunc a blandit euismod. Cras condimentum faucibus dolor. Etiam interdum egestas sagittis. Aliquam vitae molestie eros. Cras porta felis ac eros pellentesque, sed lobortis mi eleifend. Praesent ut.';
+  String title, writer, image, description;
   int pages;
   double rating;
 
-  Book(
-      this.title, this.writer, this.price, this.image, this.rating, this.pages);
+  Book(this.title, this.writer, this.price, this.image, this.rating, this.pages,
+      this.description);
 }
 
 final List<Book> books = [
   Book('CorelDraw untuk Tingkat Pemula Sampai Mahir', 'Jubilee Enterprise',
-      'Rp 50.000', 'assets/bukucorel.jpg', 3.5, 123),
-  Book('Buku Pintar Drafter Untuk Pemula Hingga Mahir', 'Widada', 'Rp 55.000',
-      'assets/bukudafter.jpg', 4.5, 200),
+      'assets/bukucorel.jpg', 3.5, 123, 'anu'),
+  Book('Buku Pintar Drafter Untuk Pemula Hingga Mahir', 'Widada',
+      'assets/bukudafter.jpg', 4.5, 200, 'anu'),
   Book('Adobe InDesign: Seri Panduan Terlengkap', 'Jubilee Enterprise',
-      'Rp 60.000', 'assets/bukuadb.jpg', 5.0, 324),
-  Book('Pemodelan Objek Dengan 3Ds Max 2014', 'Wahana Komputer', 'Rp 58.000',
-      'assets/buku3ds.jpeg', 3.0, 200),
+      'assets/bukuadb.jpg', 5.0, 324, 'anu'),
+  Book('Pemodelan Objek Dengan 3Ds Max 2014', 'Wahana Komputer',
+      'assets/buku3ds.jpeg', 3.0, 200, 'anu'),
   Book('Penerapan Visualisasi 3D Dengan Autodesk Maya', 'Dhani Ariatmanto',
-      'Rp 90.000', 'assets/bukuautodesk.jpeg', 4.8, 234),
+      'assets/bukuautodesk.jpeg', 4.8, 234, 'anu'),
   Book('Teknik Lancar Menggunakan Adobe Photoshop', 'Jubilee Enterprise',
-      'Rp 57.000', 'assets/bukuphotos.jpg', 4.5, 240),
+      'assets/bukuphotos.jpg', 4.5, 240, 'anu'),
   Book('Adobe Premiere Terlengkap dan Termudah', 'Jubilee Enterprise',
-      'Rp 56.000', 'assets/bukupremir.jpg', 4.8, 432),
+      'assets/bukupremir.jpg', 4.8, 432, 'anu'),
   Book('Cad Series : Google Sketchup Untuk Desain 3D', 'Wahana Komputer',
-      'Rp 55.000', 'assets/bukuscetc.jpeg', 4.5, 321),
+      'assets/bukuscetc.jpeg', 4.5, 321, 'anu'),
   Book('Webmaster Series : Trik Cepat Menguasai CSS', 'Wahana Komputer',
-      'Rp 54.000', 'assets/buku1.jpeg', 3.5, 431),
+      'assets/buku1.jpeg', 3.5, 431, 'anu'),
 ];
