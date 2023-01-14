@@ -46,7 +46,10 @@ class Detail extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: <Widget>[
         text(book.title,
-            size: 16, isBold: true,color: Colors.white70, padding: EdgeInsets.only(top: 16.0)),
+            size: 16,
+            isBold: true,
+            color: Colors.white70,
+            padding: EdgeInsets.only(top: 16.0)),
         text(
           'oleh ${book.writer}',
           color: Colors.white30,
@@ -55,13 +58,7 @@ class Detail extends StatelessWidget {
         ),
         Row(
           children: <Widget>[
-            text(
-              book.price,
-              isBold: true,
-              color: Colors.white70,
-              padding: EdgeInsets.only(right: 8.0),
-            ),
-            RatingBar(rating: book.rating,color: Colors.white70)
+            RatingBar(rating: book.rating, color: Colors.white70)
           ],
         ),
         SizedBox(height: 32.0),
@@ -113,10 +110,10 @@ class Detail extends StatelessWidget {
 
   ///create text widget
   text(String data,
-      {Color color = Colors.black87,
-        num size = 14,
-        EdgeInsetsGeometry padding = EdgeInsets.zero,
-        bool isBold = false}) =>
+          {Color color = Colors.black87,
+          num size = 14,
+          EdgeInsetsGeometry padding = EdgeInsets.zero,
+          bool isBold = false}) =>
       Padding(
         padding: padding,
         child: Text(
