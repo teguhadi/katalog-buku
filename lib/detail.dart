@@ -12,7 +12,7 @@ class Detail extends StatelessWidget {
     //app bar
     final appBar = AppBar(
       elevation: .5,
-      title: Text('Toko Buku'),
+      title: Text('Buku Online'),
       actions: <Widget>[
         IconButton(
           icon: Icon(Icons.search),
@@ -70,7 +70,7 @@ class Detail extends StatelessWidget {
             onPressed: () {},
             minWidth: 160.0,
             color: Colors.blue,
-            child: text('BELI', color: Colors.white, size: 13),
+            child: text('BACA', color: Colors.white, size: 13),
           ),
         )
       ],
