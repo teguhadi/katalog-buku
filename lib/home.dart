@@ -11,7 +11,7 @@ class Home extends StatelessWidget {
         icon: Icon(Icons.menu),
         onPressed: () {},
       ),
-      title: Text('Toko Buku'),
+      title: Text('Buku Online'),
       actions: <Widget>[
         IconButton(
           icon: Icon(Icons.search),
